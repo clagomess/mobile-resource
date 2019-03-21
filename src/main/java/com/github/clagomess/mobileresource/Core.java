@@ -42,17 +42,19 @@ public class Core {
                 list.addAll(ResourceInfo.listIconAndroid());
                 break;
             case ANDROID_SPLASH_LAND:
-            case ANDROID_SPLASH_PORT:
                 list.addAll(ResourceInfo.listSplashAndroidLand());
+                break;
+            case ANDROID_SPLASH_PORT:
                 list.addAll(ResourceInfo.listSplashAndroidPort());
                 break;
             case IOS_ICON:
-                list.addAll(ResourceInfo.listIconAndroid());
+                list.addAll(ResourceInfo.listIconIos());
                 break;
             case IOS_SPLASH_LAND:
+                list.addAll(ResourceInfo.listSplashIosLand());
+                break;
             case IOS_SPLASH_PORT:
-                list.addAll(ResourceInfo.listSplashAndroidLand());
-                list.addAll(ResourceInfo.listSplashAndroidPort());
+                list.addAll(ResourceInfo.listSplashIosPort());
                 break;
         }
 
